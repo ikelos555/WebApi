@@ -16,9 +16,9 @@ namespace BusinessServices
         /// <summary>
         /// Public constructor.
         /// </summary>
-        public ProductServices()
+        public ProductServices(UnitOfWork unitOfWork)
         {
-            _unitOfWork = new UnitOfWork();
+            _unitOfWork = unitOfWork;
 
         }
 

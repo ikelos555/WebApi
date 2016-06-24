@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -18,9 +17,9 @@ namespace WebApi.Controllers
         /// <summary>
         /// Public constructor to initialize product service instance
         /// </summary>
-        public ProductController()
+        public ProductController(IProductServices productServices)
         {
-            _productServices = new ProductServices();
+            _productServices = productServices;
         }
 
         #endregion
